@@ -1,4 +1,4 @@
-fn concatenate_string(str1: & mut String, str2: & mut String) ->String {
+fn concatenate_string(str1: &String, str2: & String) ->String {
 
     let mut result = String::new();
     result.push_str(str1);
@@ -9,7 +9,7 @@ fn concatenate_string(str1: & mut String, str2: & mut String) ->String {
 }
 
 fn main() {
-    let mut st1 = String::from("David");
-    let mut st2 = String::from(" and Goliath");
-    concatenate_string(&mut st1, &mut st2);
+    let st1 = String::from("David");
+    let st2 = String::from(" and Goliath");
+    concatenate_string(&st1, &st2);
 }
