@@ -1,6 +1,9 @@
 fn concatenate_string(str1: & mut String, str2: & mut String) ->String {
 
-    let mut result =  str1.push_str(str2);
+    let mut result = String::new();
+    result.push_str(str1);
+    result.push_str(str2);
+    print!("result is {} ", result);
 
     result
 }
